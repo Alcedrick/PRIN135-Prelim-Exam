@@ -1,0 +1,65 @@
+* {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  background-color: #221C35;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 2px solid;
+  border-collapse: collapse;
+  table-layout: fixed;
+  padding: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  display: inline;
+  position: fixed;
+  background-color: #1d152d;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 2px solid #e1e1e1;
+}
+
+.title {
+  margin-left: 35px;
+  background-color: #1d152d;
+}
+
+.footer {
+  margin-left: 20px;
+  background-color: #1d152d;
+}
+
+.github-link {
+  text-decoration: none;
+  background-color: #1d152d;
+}
+
+.nav-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #1d152d;
+  display: block;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.nav-btn:hover {
+  background-color: #534582;
+}
+
+.main {
+  margin-left: 250px; 
+  padding: 0px 10px;
+}
