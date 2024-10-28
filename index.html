@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <title>PRIN-135: HTML Cheatsheet</title>
-    <head>
-        <h1 id="top">PRIN-135: HTML Cheatsheet</h1>
-        <ul>
-            <li><a href="#headers">HTML Headers</a></li>
-            <li><a href="#typography">HTML Typography</a></li>
-            <li><a href="#formatting">HTML Formatting</a></li>
-            <li><a href="#media">HTML Media</a></li>
-            <li><a href="#table">HTML Table</a></li>
-            <li><a href="#forms">HTML Forms</a></li>
-        </ul>
-    </head>
+    <nav class="sidenav">
+        <title>PRIN-135: HTML Cheatsheet</title>
+        <head>
+            <link rel="stylesheet" href="styles.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+            <h1 id="top" class="title">PRIN-135: HTML Cheatsheet</h1>
+                <a href="#headers" class="nav-btn">HTML Headers</a>
+                <a href="#typography" class="nav-btn">HTML Typography</a>
+                <a href="#formatting" class="nav-btn">HTML Formatting</a>
+                <a href="#media" class="nav-btn">HTML Media</a>
+                <a href="#table" class="nav-btn">HTML Table</a>
+                <a href="#forms" class="nav-btn">HTML Forms</a>
+                <h5 class="footer">&copy PRIN135 Midterm Exam - <a href="https://github.com/Alcedrick" class="github-link" target="_blank">Alcedrick</a></h5>
+        </head>
+    </nav>
 <body>
-
-    <h2>HTML Headers (<a href="#top">top</a>)</h2>
-    <table border="1" id="headers">
+<div class="main">
+    <h2 id="headers">HTML Headers</h2>
+    <table>
         <tr>
             <th>Description</th>
             <th>Markup</th>
@@ -65,8 +70,8 @@
         </tr>
     </table>
 
-    <h2 id="typography">HTML Typography  <a href="#top">(top)</a></h2>
-        <table border="1">
+    <h2 id="typography">HTML Typography</h2>
+        <table>
             <thead>
                 <tr>
                     <th>Description</th>
@@ -163,8 +168,8 @@
                 </tr>
             </tbody>
         </table>
-        <h2 id="formatting">HTML Formatting <a href="#top">(top)</a></h2>
-        <table border="1">
+    <h2 id="formatting">HTML Formatting</h2>
+        <table>
             <thead>
                 <tr>
                     <th>Description</th>
@@ -245,8 +250,8 @@
                 </tr>
             </tbody>
             </table>
-            <h2 id="formatting">HTML Media <a href="#top">(top)</a></h2>
-            <table border="1">
+        <h2 id="media">HTML Media</h2>
+            <table>
                 <thead>
                     <tr>
                         <th>Description</th>
@@ -313,152 +318,229 @@
                     </tr>
                 </tbody>
             </table>
-                <h2 id="formatting">HTML Table <a href="#top">(top)</a></h2>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Description</th>
-                            <th>Markup</th>
-                            <th>Example</th>
-                            <th>Output</th>
-                        </tr>
-                    </thead>
-                <tbody>
-                    <tr>
-                        <td>Table</td>
-                        <td>
-                            &lt;table&gt; &lt;/table&gt;
-                        </td>
-                        <td rowspan="3">
+        <h2 id="table">HTML Table</h2>
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Markup</th>
+                    <th>Example</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>&lt;table&gt;&lt;/table&gt;</td>
+                    <td rowspan="3">
+                        &lt;table border=&quot;1&quot;&gt;<br>
+                        
+                        <p style="margin-left:15px"> 
+                            &lt;tr&gt;
+                        </p>
 
-                        </td>
-                    </tr>
-                    <tr></tr>
-                        <td>Table Row</td>
-                        <td>
-                            &lt;tr&gt; &lt;/tr&gt;
-                        </td>
-                        <td>
+                        <p style="margin-left: 25px;">
+                            &lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>
+                            &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                        </p>
+                        
+                        <p style="margin-left:15px"> 
+                            &lt;/tr&gt;
+                        </p>
+                        
+                        <p style="margin-left:15px"> 
+                            &lt;tr&gt;
+                        </p>
+                        <p style="margin-left: 25px;">
+                            &lt;td&gt;Row 2, Column 1&lt;/td&gt;<br>
+                            &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+                        </p>
+                        
+                        <p style="margin-left:15px"> 
+                            &lt;tr&gt;
+                        </p>
 
-                        </td>
-                    </tr>
-                    <tr></tr>
-                        <td>Table Data</td>
-                        <td>
-                            &lt;td&gt; &lt;/td&gt;
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
-                    <tr></tr>
-                        <td>Table Head</td>
-                        <td>
-                            &lt;thead&gt; &lt;/thead&gt;
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Table Head Cell</td>
-                        <td>
-                            &lt;th&gt; &lt;/th&gt;
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Table Body</td>
-                        <td>
-                            &lt;tbody&gt; &lt;/tbody&gt;
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Table Footer</td>
-                        <td>
-                            &lt;tfoot&gt; &lt;/tfoot&gt;
-                        </td>
-                        <td>
-
-                        </td>
-                    </tr>
-                </tbody>
-                </table>
-                <h2 id="forms">HTML Form Elements <a href="#top"> (top)</a></h2>
-    <table border="1">
-        <tr>
-            <th>Description</th>
-            <th>Markup</th>
-            <th>Output</th>
-        </tr>
-        <tr>
-            <td>Label</td>
-            <td>&lt;label for="input-id"&gt;Label&lt;/label&gt;</td>
-            <td><label for="input-id">Label:</label></td>
-        </tr>
-        <tr>
-            <td>Input - Textbox</td>
-            <td>&lt;input type="text" name="name"&gt;</td>
-            <td><input type="text" name="name"></td>
-        </tr>
-        <tr>
-            <td>Input - Number</td>
-            <td>&lt;input type="number" name="name"&gt;</td>
-            <td><input type="number" name="name"></td>
-        </tr>
-        <tr>
-            <td>Input - Password</td>
-            <td>&lt;input type="password" name="name"&gt;</td>
-            <td><input type="number" name="name"></td>
-        </tr>
-        <tr>
-            <td>Input - Checkbox</td>
-            <td>&lt;input type="checkbox" name="name"&gt; Check me</td>
-            <td><input type="checkbox" name="name"> Check me</td>
-        </tr>
-        <tr>
-            <td>Input - Radio</td>
-            <td>&lt;input type="radio" name="name"&gt; Option 1<br>&lt;input type="radio" name="name"&gt; Option 2</td>
-            <td>
-                <input type="radio" name="name"> Option 1<br>
-                <input type="radio" name="name"> Option 2
-            </td>
-        </tr>
-        <tr>
-            <td>Input - Submit</td>
-            <td>&lt;input type="submit" value="Submit"&gt;</td>
-            <td><input type="submit" value="Submit"></td>
-        </tr>
-        <tr>
-            <td>Input - Button</td>
-            <td>&lt;input type="button" value="Click Me"&gt;</td>
-            <td><input type="button" value="Click Me"></td>
-        </tr>
-        <tr>
-            <td>Select</td>
-            <td>
-                &lt;select name="dropdown"&gt;<br>
-                &lt;option&gt;Option 1&lt;/option&gt;<br>
-                &lt;option&gt;Option 2&lt;/option&gt;<br>
-                &lt;/select&gt;
-            </td>
-            <td>
-                <select name="dropdown">
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td>Textarea</td>
-            <td>&lt;textarea&gt;Textarea here&lt;/textarea&gt;</td>
-            <td><textarea>Textarea here</textarea></td>
-        </tr>
-    </table>
-</body>
+                        &lt;/table&gt;
+                    </td>
+                    <td rowspan="3">
+                        <table border="1">
+                            <tr>
+                                <td>Row 1, Column 1</td>
+                                <td>Row 1, Column 2</td>
+                            </tr>
+                            <tr>
+                                <td>Row 2, Column 1</td>
+                                <td>Row 2, Column 2</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Table Row</td>
+                    <td>&lt;tr&gt;&lt;/tr&gt;</td>
+                </tr>
+                <tr>
+                    <td>Table Data</td>
+                    <td>&lt;td&gt;&lt;/td&gt;</td>
+                </tr>
+                <tr>
+                    <td>Table Head</td>
+                    <td>&lt;th&gt;&lt;/th&gt;</td>
+                    <td rowspan="3">&lt;table border ="1"&gt;
+                        <p style="margin-left:30px">
+                            &lt;thead&gt;</p>
+                        <p style="margin-left:50px"> 
+                                &lt;tr&gt;
+                        </p>
+                        <p style="margin-left:70px">
+                            &lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>
+                            &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                        </p>
+                        <p style="margin-left:50px"> 
+                            &lt;/tr&gt;
+                        </p>
+                        <p style="margin-left:30px">
+                            &lt;/thead&gt;
+                        </p>
+                        <p style="margin-left:30px">
+                            &lt;tbody&gt;
+                        </p>
+                        <p style="margin-left:50px">
+                            &lt;tr&gt;
+                        </p>
+                        <p style="margin-left:70px">
+                            &lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>
+                            &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                        </p>
+                        <p style="margin-left:50px"> 
+                            &lt;/tr&gt;
+                        </p>
+                        <p style="margin-left:50px">
+                            &lt;tr&gt;
+                        </p>
+                        <p style="margin-left: 70px;">
+                            &lt;td&gt;Row 2, Column 1&lt;/td&gt;<br>
+                            &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+                        </p>
+                        <p style="margin-left:50px">
+                            &lt;/tr&gt;
+                        </p>
+                        <p style="margin-left: 30px;">&lt;/tbody&gt;</p>
+                        <p style="margin-left: 30px;">
+                            &lt;tfoot&gt;
+                        </p>
+                        <p style="margin-left:50px">
+                            &lt;tr&gt;
+                        </p>
+                        <p style="margin-left: 70px;">
+                            &lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>
+                            &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                        </p>
+                        <p style="margin-left:50px">
+                            &lt;/tr&gt; 
+                        </p>
+                        <p style="margin-left:30px">
+                            &lt;/tfoot&gt;  
+                        </p>
+                        &lt;table&gt;
+                    <td rowspan="3">
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Row 1 Column 1</td><td>Row 1 Column 2</td></tr>
+                                <tr><td>Row 2 Column 1</td><td>Row 2 Column 2</td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Column 1 Footer</td>
+                                    <td>Column 2 Footer</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Table Body</td>
+                    <td>&lt;tbody&gt;&lt;/tbody&gt;</td>
+                </tr>
+                <tr>
+                    <td>Table Footer</td>
+                    <td>&lt;tfoot&gt;&lt;/tfoot&gt;</td>
+                </tr>
+            </table>
+    <h2 id="forms">HTML Form Elements</h2>
+        <table>
+            <tr>
+                <th>Description</th>
+                <th>Markup</th>
+                <th>Output</th>
+            </tr>
+            <tr>
+                <td>Label</td>
+                <td>&lt;label for="input-id"&gt;Label&lt;/label&gt;</td>
+                <td><label for="input-id">Label:</label></td>
+            </tr>
+            <tr>
+                <td>Input - Textbox</td>
+                <td>&lt;input type="text" name="name"&gt;</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Input - Number</td>
+                <td>&lt;input type="number" name="name"&gt;</td>
+                <td><input type="number" name="name"></td>
+            </tr>
+            <tr>
+                <td>Input - Password</td>
+                <td>&lt;input type="password" name="name"&gt;</td>
+                <td><input type="number" name="name"></td>
+            </tr>
+            <tr>
+                <td>Input - Checkbox</td>
+                <td>&lt;input type="checkbox" name="name"&gt; Check me</td>
+                <td><input type="checkbox" name="name"> Check me</td>
+            </tr>
+            <tr>
+                <td>Input - Radio</td>
+                <td>&lt;input type="radio" name="name"&gt; Option 1<br>&lt;input type="radio" name="name"&gt; Option 2</td>
+                <td>
+                    <input type="radio" name="name"> Option 1<br>
+                    <input type="radio" name="name"> Option 2
+                </td>
+            </tr>
+            <tr>
+                <td>Input - Submit</td>
+                <td>&lt;input type="submit" value="Submit"&gt;</td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+            <tr>
+                <td>Input - Button</td>
+                <td>&lt;input type="button" value="Click Me"&gt;</td>
+                <td><input type="button" value="Click Me"></td>
+            </tr>
+            <tr>
+                <td>Select</td>
+                <td>
+                    &lt;select name="dropdown"&gt;<br>
+                    &lt;option&gt;Option 1&lt;/option&gt;<br>
+                    &lt;option&gt;Option 2&lt;/option&gt;<br>
+                    &lt;/select&gt;
+                </td>
+                <td>
+                    <select name="dropdown">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Textarea</td>
+                <td>&lt;textarea&gt;Textarea here&lt;/textarea&gt;</td>
+                <td><textarea>Textarea here</textarea></td>
+            </tr>
+        </table>
+    </div>
+    </body>
 </html>
