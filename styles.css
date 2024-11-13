@@ -5,9 +5,15 @@
   color: #fff;
 }
 
+
 table {
   width: 100%;
+  table-layout: fixed;
+  border: 2px solid;
+  border-collapse: collapse;
+  padding: 20px;
 }
+
 
 table, th, td {
   border: 2px solid;
@@ -15,6 +21,7 @@ table, th, td {
   table-layout: fixed;
   padding: 20px;
 }
+
 
 .sidenav {
   height: 100%;
@@ -26,24 +33,29 @@ table, th, td {
   top: 0;
   left: 0;
   overflow-x: hidden;
+  overflow-y: auto;
   padding-top: 20px;
   border-right: 2px solid #e1e1e1;
 }
+
 
 .title {
   margin-left: 35px;
   background-color: #1d152d;
 }
 
+
 .footer {
   margin-left: 20px;
   background-color: #1d152d;
 }
 
+
 .github-link {
   text-decoration: none;
   background-color: #1d152d;
 }
+
 
 .nav-btn {
   padding: 6px 8px 6px 16px;
@@ -55,11 +67,71 @@ table, th, td {
   border-bottom: 1px solid #e1e1e1;
 }
 
+
 .nav-btn:hover {
   background-color: #534582;
 }
 
+
 .main {
-  margin-left: 250px; 
+  margin-left: 250px;
   padding: 0px 10px;
 }
+
+
+@media screen and (max-width: 425px) {
+  .sidenav {
+    width: 100%;
+    height: calc(4 * 50px + 20px); 
+    max-height: 80vh; 
+    overflow-y: auto; 
+  }
+
+  .sidenav .nav-btn {
+    display: block;
+    width: 100%;
+    padding: 8px 15px; 
+    text-align: left;
+    white-space: normal;
+  }
+
+  .main {
+    margin-left: 0;
+    margin-top: 250px; 
+  }
+
+  .table-container {
+    width: 100%; 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch; 
+  }
+
+  table {
+    width: 1000px; 
+    border: 2px solid;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  th, td {
+    padding: 10px; 
+    font-size: 14px;
+    word-wrap: break-word; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    border: 2px solid; 
+  }
+
+  td {
+    max-width: 150px; 
+    overflow: hidden; 
+  }
+}
+
+
+
+
+
+
+
+
